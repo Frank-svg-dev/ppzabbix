@@ -12,7 +12,7 @@ import (
 func PostProcessingJSON(ProcessStruct interface{}, url string) (ResultMap map[string]interface{}, err error) {
 	jsonBytes, _ := json.Marshal(ProcessStruct)
 	body := string(jsonBytes)
-	response, err := http.Post(url, "application/json; charset=utf-8", strings.NewReader(body))
+	response, err := http.Post(url, "application/json-rpc; charset=utf-8", strings.NewReader(body))
 	if err != nil {
 		fmt.Println(err)
 	}

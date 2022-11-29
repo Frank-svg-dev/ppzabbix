@@ -13,8 +13,8 @@ type GetHostGroupsList struct {
 }
 
 type Params struct {
-	Output string `json:"output"`
-	Filter Filter `json:"filter"`
+	Output []string `json:"output"`
+	Filter Filter   `json:"filter"`
 }
 
 type Filter struct {
