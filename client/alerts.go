@@ -26,6 +26,3 @@ func GetAlerts(client *client.RESTCLIENT, opts alerts.GetAlertsOpts) {
 	fmt.Println(result)
 
 }
-func main() {
-
-}

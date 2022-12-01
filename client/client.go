@@ -7,6 +7,9 @@ import (
 
 // NewClientProvider 初始化客户端
 func NewClientProvider(url, username, password string) *client.RESTCLIENT {
+
+	url = url + "/zabbix/api_jsonrpc.php"
+
 	opts := client.ClientOpts{
 		JsonRpc: "2.0",
 		Method:  "user.login",

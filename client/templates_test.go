@@ -5,7 +5,7 @@ import (
 	"testing"
 )
 
-var ZbxClient = NewClientProvider("http://192.168.119.100/zabbix/api_jsonrpc.php", "Admin", "zabbix")
+var ZbxClient = NewClientProvider("http://192.168.119.100", "Admin", "zabbix")
 
 /*
 只获取template的ID
